@@ -88,8 +88,6 @@ builder.add_section(W.Section(header="Test Section", widgets=[]))
 card = builder.build()
 ```
 
-> The factory method allows for scalability and easier transitions when new versions of card builders are introduced. Simply change the `version` parameter when invoking `CardBuilder.create()` to get the desired version of the card builder.
-
 ---
 
 ## Documentation
