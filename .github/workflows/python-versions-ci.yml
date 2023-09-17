@@ -23,7 +23,7 @@ jobs:
         echo "PYTHONPATH=gchatcardbuilder" >> $GITHUB_ENV
     - name: Run tests with pytest and coverage
       run: |
-        pytest --cov=./ tests/
+        pytest --cov=tests
     - name: Generate coverage report
       run: coverage report -m
     - name: Upload coverage to Codecov
