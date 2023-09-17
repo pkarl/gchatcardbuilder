@@ -194,7 +194,8 @@ class OpenLink(BaseModel):
 
 
 class OnClick(BaseModel):
-    data: Union[Action, OpenLink, Action]
+    openLink: Optional[OpenLink]
+    action: Optional[Action]
 
 
 class Image(BaseModel):
