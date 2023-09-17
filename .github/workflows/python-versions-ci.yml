@@ -20,7 +20,7 @@ jobs:
         python -m pip install -r requirements.txt
     - name: set pythonpath
       run: |
-        echo "PYTHONPATH=gchat_card_builder" >> $GITHUB_ENV
+        echo "PYTHONPATH=gchatcardbuilder" >> $GITHUB_ENV
     - name: Run tests with pytest and coverage
       run: |
         pytest --cov=./ tests/
