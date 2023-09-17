@@ -1,2 +1,3 @@
 bump2version==1.0.1
 bumpversion==0.6.0
+-e git+ssh://git@github.com/pkarl/gchatcardbuilder.git@dfb389a69ef2f592c5b5a80e9853afc3d1ba7a85#egg=gchatcardbuilder
