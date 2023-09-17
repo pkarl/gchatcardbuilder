@@ -16,7 +16,7 @@ def models_to_dict(model) -> dict:
     if isinstance(model, BaseModel):
         return {
             field_name: models_to_dict(value)
-            for field_name, value in model.dict().items()
+            for field_name, value in model.model_dump().items()
         }
 
     # If the model is none of the above types, return it as is.
