@@ -2,7 +2,7 @@
 
 Gchat Card Builder is a Python library that assists in the creation and management of chat "cards" for Google Chat responses via API. Supports CardsV2 format.
 
-[![codecov](https://codecov.io/github/pkarl/gchat-card-builder/graph/badge.svg?token=DQC6S9XHR0)](https://codecov.io/github/pkarl/gchat-card-builder)
+[![codecov](https://codecov.io/github/pkarl/gchatcardbuilder/graph/badge.svg?token=DQC6S9XHR0)](https://codecov.io/github/pkarl/gchatcardbuilder)
 
 ---
 
@@ -62,7 +62,7 @@ gchat_response = builder.build()
 
 ### Installation Steps
 ```bash
-pip install gchat-card-builder
+pip install gchatcardbuilder
 ```
 
 ---
@@ -101,7 +101,7 @@ If you're planning on contributing or wish to run tests to ensure the library fu
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/pkarl/gchat-card-builder
+git clone https://github.com/pkarl/gchatcardbuilder
 ```
 
 2. Navigate to the cloned directory and install the requirements:
