@@ -74,7 +74,7 @@ Google Chat Card Builder provides an easy-to-use interface for creating richly f
 ### Basic Example:
 
 ```python
-from gchat_card_builder import CardBuilder, CardWidgets as W
+from gchatcardbuilder import CardBuilder, CardWidgets as W
 
 # Get builder instance using the factory method
 builder = CardBuilder.create()

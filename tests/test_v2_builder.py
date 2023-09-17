@@ -2,8 +2,8 @@
 
 import pytest  # pylint: disable=unused-import
 
-from gchat_card_builder.card_builder_v2 import CardBuilderV2
-from gchat_card_builder.versions.v2.root import *  # pylint: disable=unused-wildcard-import, wildcard-import
+from gchatcardbuilder.card_builder_v2 import CardBuilderV2
+from gchatcardbuilder.versions.v2.root import *  # pylint: disable=unused-wildcard-import, wildcard-import
 
 # Sample instances for testing
 sample_header = CardHeader(
