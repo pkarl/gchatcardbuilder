@@ -21,34 +21,34 @@ Gchat Card Builder provides an easy-to-use interface for creating richly formatt
 Here's an example of how this could help clean up code:
 
 ```python
-    # broken onto several lines for readability
-    gchat_response = copy.deepcopy(BIG_OLD_DICT_TEMPLATE)
-    widgets = gchat_response["cardsV2"][0]["card"]["sections"][0]["widgets"]
-    button = widgets[0]["buttonList"]["buttons"][0]
-    button["text"] = "click to get rick rolled"
-    button["onClick"]["openLink"]["url"] = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+# broken onto several lines for readability
+gchat_response = copy.deepcopy(BIG_OLD_DICT_TEMPLATE)
+widgets = gchat_response["cardsV2"][0]["card"]["sections"][0]["widgets"]
+button = widgets[0]["buttonList"]["buttons"][0]
+button["text"] = "click to get rick rolled"
+button["onClick"]["openLink"]["url"] = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 ```
 
 becomes this:
 
 ```python
-    builder = CardBuilder.create()
-    builder.add_section(
-        W.ButtonList(
-            buttons=[
-                W.Button(
-                    text="click to get rick rolled",
-                    onClick=W.OnClick(
-                        openLink=W.OpenLink(
-                            url='https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-                        )
+builder = CardBuilder.create()
+builder.add_section(
+    W.ButtonList(
+        buttons=[
+            W.Button(
+                text="click to get rick rolled",
+                onClick=W.OnClick(
+                    openLink=W.OpenLink(
+                        url='https://www.youtube.com/watch?v=dQw4w9WgXcQ',
                     )
                 )
-            ]
-        ),
-    )
+            )
+        ]
+    ),
+)
 
-    gchat_response = builder.build()
+gchat_response = builder.build()
 ```
 
 ---
